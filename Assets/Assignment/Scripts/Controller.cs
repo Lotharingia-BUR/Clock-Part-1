@@ -19,18 +19,18 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 move = transform.up * thrustInput * tSpeed * Time.deltaTime;
-        transform.Translate(move);
-        transform.Rotate(rotate);
-    }
-
-    void FixedUpdate()
-    {
         thrustInput = Input.GetAxis("Vertical");
         rotateInput = Input.GetAxis("Horizontal");
         if (thrustInput > 0)
         {
             thrustInput = 0;
         }
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 move = transform.forward * thrustInput * tSpeed * Time.deltaTime;
+        transform.Translate(move);
+        rigidbody.AddTorque(rotateInput * -rSpeed * Time.deltaTime);
     }
 }

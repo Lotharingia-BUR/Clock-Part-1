@@ -563,7 +563,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -624,7 +624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 929713953}
-  speed: 4
+  tSpeed: 4
+  rSpeed: 40
 --- !u!1 &1971630365
 GameObject:
   m_ObjectHideFlags: 0
