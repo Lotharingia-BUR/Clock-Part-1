@@ -7,7 +7,9 @@ public class Controller : MonoBehaviour
     Rigidbody2D rigidbody;
     public Transform controller;
     float thrustInput;
-    public float speed = 100f;
+    float rotateInput;
+    public float tSpeed = 4f;
+    public float rSpeed = 4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +19,15 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Vector3 mov = transform.up * thrustInput * speed * Time.deltaTime;
-        transform.Translate(mov);
+        Vector2 move = transform.up * thrustInput * tSpeed * Time.deltaTime;
+        transform.Translate(move);
+        transform.Rotate(rotate);
     }
 
     void FixedUpdate()
     {
         thrustInput = Input.GetAxis("Vertical");
+        rotateInput = Input.GetAxis("Horizontal");
         if (thrustInput > 0)
         {
             thrustInput = 0;
