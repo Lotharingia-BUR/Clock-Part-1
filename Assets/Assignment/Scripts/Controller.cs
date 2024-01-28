@@ -21,16 +21,16 @@ public class Controller : MonoBehaviour
     {
         thrustInput = Input.GetAxis("Vertical");
         rotateInput = Input.GetAxis("Horizontal");
-        if (thrustInput > 0)
+        /*if (thrustInput < 0)
         {
             thrustInput = 0;
-        }
+        }*/
     }
 
     void FixedUpdate()
     {
-        Vector2 move = transform.forward * thrustInput * tSpeed * Time.deltaTime;
-        transform.Translate(move);
+        /**//*Vector2 move = thrustInput * tSpeed * Time.deltaTime;*/
+        transform.Translate(0f, thrustInput * tSpeed * Time.deltaTime, 0f);
         rigidbody.AddTorque(rotateInput * -rSpeed * Time.deltaTime);
     }
 }
