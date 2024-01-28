@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    public float speed = 10f
+    Rigidbody2D rigidbody;
+    float thrustInput;
+    public float speed = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,13 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float thruster = Input.GetAxis("Vertical");
+
+        rigidbody.Translate(0, 0, 1);
+    }
+
+    void FixedUpdate()
+    {
+
     }
 }
