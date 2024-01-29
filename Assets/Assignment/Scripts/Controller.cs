@@ -29,7 +29,6 @@ public class Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        /**//*Vector2 move = thrustInput * tSpeed * Time.deltaTime;*/
         transform.Translate(0f, thrustInput * tSpeed * Time.deltaTime, 0f);
         rigidbody.AddTorque(rotateInput * -rSpeed * Time.deltaTime);
     }
