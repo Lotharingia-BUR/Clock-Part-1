@@ -21,10 +21,10 @@ public class Controller : MonoBehaviour
     {
         thrustInput = Input.GetAxis("Vertical");
         rotateInput = Input.GetAxis("Horizontal");
-        /*if (thrustInput < 0)
+        if (thrustInput < 0)
         {
             thrustInput = 0;
-        }*/
+        }
     }
 
     void FixedUpdate()
