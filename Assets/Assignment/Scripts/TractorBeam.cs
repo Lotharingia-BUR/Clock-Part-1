@@ -5,17 +5,21 @@ using UnityEngine;
 public class TractorBeam : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
-    public color onSwitch;
+    public Color tractorLight;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRender.color = onSwitch;
+        spriteRender.color = tractorLight;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        {
+            Debug.Log("space down");
+            spriteRenderer.color = Color.red;
+        }
     }
 }
