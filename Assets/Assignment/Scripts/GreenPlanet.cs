@@ -24,4 +24,9 @@ public class GreenPlanet : MonoBehaviour
         Vector2 force = speed * (transform.position - beam.position);
         rigidbody.AddForce(force);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
 }

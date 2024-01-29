@@ -9,6 +9,7 @@ public class TractorBeam : MonoBehaviour
 
     void Start()
     {
+        tractorBeam.SetActive(false);
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -16,7 +17,6 @@ public class TractorBeam : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space)) 
         {
-            Debug.Log("space down");
             spriteRenderer.color = Color.red;
             tractorBeam.SetActive(true);
         } else
