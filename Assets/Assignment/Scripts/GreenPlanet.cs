@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GreenPlanet : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Rigidbody2D rigidbody;
+
     void Start()
     {
         
@@ -15,4 +16,8 @@ public class GreenPlanet : MonoBehaviour
     {
         
     }
-}
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        
+    }
