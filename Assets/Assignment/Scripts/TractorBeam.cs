@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TractorBeam : MonoBehaviour
 {
+    public GameObject tractorBeam;
     SpriteRenderer spriteRenderer;
 
     void Start()
@@ -17,9 +18,11 @@ public class TractorBeam : MonoBehaviour
         {
             Debug.Log("space down");
             spriteRenderer.color = Color.red;
+            tractorBeam.SetActive(true);
         } else
         {
             spriteRenderer.color = Color.white;
+            tractorBeam.SetActive(false);
         }
     }
 }
