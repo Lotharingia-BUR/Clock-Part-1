@@ -7,7 +7,7 @@ public class GreenPlanet : MonoBehaviour
     Rigidbody2D rigidbody;
     GameObject goal;
     GameObject beam;
-    float speed = 1f;
+    float speed = 2f;
 
     void Start()
     {

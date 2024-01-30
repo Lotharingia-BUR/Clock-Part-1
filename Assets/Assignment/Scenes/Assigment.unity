@@ -1111,8 +1111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 929713953}
-  tSpeed: 6
-  rSpeed: 500
+  tSpeed: 8
+  rSpeed: 700
 --- !u!1 &934030517
 GameObject:
   m_ObjectHideFlags: 0

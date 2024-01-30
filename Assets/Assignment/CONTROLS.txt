@@ -1,0 +1,5 @@
+W - Move Forward
+A - Rotate Right
+D - Rotate Left
+S - Change Tractor Beam Rotation
+Space - Engage Tractor Beam
