@@ -6,6 +6,7 @@ public class GreenPlanet : MonoBehaviour
 {
     Rigidbody2D rigidbody;
     public Transform beam;
+    public GameObject goal;
     public float speed = -1f;
 
     void Start()
@@ -27,5 +28,13 @@ public class GreenPlanet : MonoBehaviour
     {
         Vector2 force = speed * (transform.position - beam.position);
         rigidbody.AddForce(force);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject == goal)
+        {
+            Destroy(gameObject);
+        }
     }
 }
