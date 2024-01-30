@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GreenPlanet : MonoBehaviour
+public class RedPlanet : MonoBehaviour
 {
     Rigidbody2D rigidbody;
     GameObject goal;
@@ -12,7 +12,7 @@ public class GreenPlanet : MonoBehaviour
     void Start()
     {
         beam = GameObject.Find("Player Character/Ship Bottom/Tractor Beam Pointer");
-        goal = GameObject.Find("Bounding Box/Green Goal");
+        goal = GameObject.Find("Bounding Box/Red Goal");
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
