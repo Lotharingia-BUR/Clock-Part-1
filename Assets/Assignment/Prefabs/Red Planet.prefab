@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9064581832116426693}
   - component: {fileID: 1730140901490632154}
   - component: {fileID: 1709393714964262347}
-  - component: {fileID: 7222107417701542598}
+  - component: {fileID: 5528703244015031665}
   m_Layer: 0
   m_Name: Red Planet
   m_TagString: Untagged
@@ -149,7 +149,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.51
---- !u!114 &7222107417701542598
+--- !u!114 &5528703244015031665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,9 +158,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2408464843120485831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b522629d21318ce4db1e617df2b950fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 3405d415bd247174384960bc73600ef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beam: {fileID: 0}
-  goal: {fileID: 0}
-  speed: 1
